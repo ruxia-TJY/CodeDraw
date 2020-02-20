@@ -10,45 +10,41 @@
 
 
 
-## CodeDraw 语法
+## CodeDraw 示例
 
-​	CodeDraw使用空格分开关键字。
-
-### 创建一个窗体
++ 还没写完全，先写个已经好的示例吧
 
 ```
-创建一个新窗体
-form
-默认使用640x480大小，所以当你只输入一个form时，CodeDraw会创建一个大小为640x480的窗体，等同于使用EasyX的initgraph(640,480,SHOWCONSOLE);语句
+创建一个大小为600x400的窗体
+form 640 400
 
-创建一个宽为width，高为height的窗体
-form width height
-```
+设置背景颜色为红色
+setcolor bk RED
 
-### 清空窗体
+设置线颜色为绿色
+setcolor line rgb 0 250 0
 
-```
-cls
-```
+从(0,0)点到（100,100)点画线
+line 0 0 100 100
 
-### 关闭窗体
+设置填充颜色为黄色
+setcolor fill ff0000
 
-```
+画有边框的填充圆,圆心坐标(50,40),半径20
+circle fill 50 40 20
+
+关闭窗体
 close
-窗体的关闭前会确认一次，按下Enter键或输入'y'即可
-```
 
-### 退出CodeDraw
-
-```
+退出CodeDraw
 exit
 ```
 
-### 清空命令行
+## 目标 
 
-```
-clear
-```
+- [ ] 支持EasyX所有函数
+- [ ] 导出为图片
+
 
 ## 历程
 
